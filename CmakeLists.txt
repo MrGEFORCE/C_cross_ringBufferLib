@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.25)
+project(C_x86cross_ringBufferLib C)
+
+set(CMAKE_BUILD_TYPE DEBUG)
+
+include_directories("./")
+
+file(GLOB SRC *.c)
+
+add_executable(${CMAKE_PROJECT_NAME} ${SRC})
